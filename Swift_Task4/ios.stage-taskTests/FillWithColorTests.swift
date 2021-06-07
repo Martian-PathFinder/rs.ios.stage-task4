@@ -9,21 +9,21 @@ class FillWithColorTests: XCTestCase {
     var column = Int()
     var newColor = Int()
 
-//    func setUpWithError() throws {
-//        painter = FillWithColor()
-//    }
+    override func setUpWithError() throws {
+        painter = FillWithColor()
+    }
+
+    override func tearDownWithError() throws {
+        painter = nil
+    }
+
+//     override func setUp() {
+//         painter = FillWithColor()
+//     }
 //
-//    func tearDownWithError() throws {
-//        painter = nil
-//    }
-
-     override func setUp() {
-         painter = FillWithColor()
-     }
-
-     override func tearDown() {
-         painter = nil
-     }
+//     override func tearDown() {
+//         painter = nil
+//     }
 
     
     func test1() {

@@ -3,10 +3,10 @@ import XCTest
 
 class IntToRomanTests: XCTestCase {
 
-//    func setUpWithError() throws {
-//        try super.setUpWithError()
-//        continueAfterFailure = false
-//    }
+    override func setUpWithError() throws {
+           try super.setUpWithError()
+           continueAfterFailure = false
+    }
 
     func testOutOfBounds() {
         XCTAssertNil(0.roman)

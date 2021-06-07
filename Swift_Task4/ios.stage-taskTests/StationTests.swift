@@ -5,13 +5,13 @@ class StationTests: XCTestCase {
 
     var station: Station!
 
-    func setUpWithError() throws {
+    override func setUpWithError() throws {
         station = CallStation()
     }
 
-    func tearDownWithError() throws {
+    override func tearDownWithError() throws {
     }
-
+    
     func test_addUsers() throws {
         let user1 = User(id: UUID())
         let user2 = User(id: UUID())
