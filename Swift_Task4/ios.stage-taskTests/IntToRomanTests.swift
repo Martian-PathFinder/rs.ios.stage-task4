@@ -4,8 +4,8 @@ import XCTest
 class IntToRomanTests: XCTestCase {
 
     override func setUpWithError() throws {
-           try super.setUpWithError()
-           continueAfterFailure = false
+        try super.setUpWithError()
+        continueAfterFailure = false
     }
 
     func testOutOfBounds() {

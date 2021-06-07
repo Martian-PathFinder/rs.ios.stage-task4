@@ -2,7 +2,7 @@ import XCTest
 @testable import ios_stage_task
 
 class FillWithColorTests: XCTestCase {
-
+    
     var painter: FillWithColor!
     var image = [[Int]]()
     var row = Int()
@@ -17,15 +17,6 @@ class FillWithColorTests: XCTestCase {
         painter = nil
     }
 
-//     override func setUp() {
-//         painter = FillWithColor()
-//     }
-//
-//     override func tearDown() {
-//         painter = nil
-//     }
-
-    
     func test1() {
         image = [[Int()]]
         row = 0
@@ -79,5 +70,4 @@ class FillWithColorTests: XCTestCase {
         newColor = 2
         XCTAssertEqual(painter.fillWithColor(image, row, column, newColor), [[2,2,2],[1,1,1],[0,0,0]])
     }
-
- }
+}

@@ -11,7 +11,7 @@ class StationTests: XCTestCase {
 
     override func tearDownWithError() throws {
     }
-    
+
     func test_addUsers() throws {
         let user1 = User(id: UUID())
         let user2 = User(id: UUID())
